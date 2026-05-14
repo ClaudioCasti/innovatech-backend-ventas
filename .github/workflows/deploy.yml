@@ -40,7 +40,7 @@ jobs:
               --name innovatech-backend-ventas \
               -p 8080:8080 \
               --restart unless-stopped \
-              -e DB_ENDPOINT=${{ secrets.DB_ENDPOINT }} \
+              -e DB_ENDPOINT=mysql \
               -e DB_PORT=${{ secrets.DB_PORT }} \
               -e DB_NAME=${{ secrets.DB_NAME }} \
               -e DB_USERNAME=${{ secrets.DB_USERNAME }} \
